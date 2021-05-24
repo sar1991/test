@@ -1,0 +1,81 @@
+ /* SECTION */
+header .container-2{
+    display: flex;
+    align-items: center;
+}
+
+header section ul.langs{
+    display: flex;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.langs .lang{
+    cursor: pointer;
+    position: relative;
+}
+
+ .langs .lang::before{
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0%;
+     height: 2px;
+     background-color:var(--text-color);
+     transition: 0.37s;
+} 
+
+.langs .lang:hover::before{
+    width: 100%;
+}
+
+ .langs li.seperator{
+    margin: 0 1rem;
+    font-size: 26px;
+}
+
+.langs li{
+    margin: 0.5rem;
+}
+
+.favourite{
+    font-size: 22px;
+    color: var(--text-color);
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.profile{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile .text{
+    margin-left: 0.5rem;
+}
+
+button.podtNewLink{
+    margin-left: 2rem;
+    height: 46px;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--primary-color);
+    border-radius: 5px;
+    box-sizing: border-box; 
+    border: 5px solid var(--text-color);
+    transition: 0.37s;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--text-color);
+}
+ 
+button.podtNewLink:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}

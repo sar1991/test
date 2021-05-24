@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #002f34;
+    --secondary-color:#23e5db;
+    --input-background-color:#f2f4f5;
+    --text-color: #ffffff;
+    
+    --content-width:1077px;
+    /* HEADER */
+    --header-height: 70px;
+}
